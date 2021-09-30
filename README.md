@@ -1,4 +1,4 @@
-# Using-APIs
+# Using APIs
 
 * [HackYourFuture](https://github.com/HackYourFuture) - A web development program
 
