@@ -4,4 +4,4 @@
 
 <br/>
 
-This repository contains all homework assignments for the UsingAPIs/JavaScript3 Module.
+This repository contains all homework assignments for the UsingAPI's/JavaScript3 Module.
