@@ -1,0 +1,22 @@
+body {
+  font-family: cursive;
+  text-align: center;
+  background-color: antiquewhite;
+  margin-top: 5%;
+}
+
+span {
+  font-size: 30px;
+}
+
+.image {
+  padding: 3%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img {
+  width: 80%;
+}
