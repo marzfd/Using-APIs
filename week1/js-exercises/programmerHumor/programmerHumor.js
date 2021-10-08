@@ -3,7 +3,7 @@ function main() {
   const url = `https://xkcd.now.sh/?comic=latest`;
 
   // ! XMLHttpRequest
-  function requestWithXHR(url) {
+  function requestWithXHR() {
 
     // 1. Create a new XMLHttpRequest object
     const xhr = new XMLHttpRequest();
@@ -47,7 +47,7 @@ function main() {
   
 
   // ! Axios
-  function requestWithAxios(url) {
+  function requestWithAxios() {
     
     axios.get(url)
     
