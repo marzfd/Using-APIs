@@ -1,4 +1,4 @@
-import { showInfo } from './showInfo.js';
+import { repoInfo } from './RepoInfo.js';
 
 const url = 'https://api.github.com/orgs/HackYourFuture/repos?per_page=100';
 
@@ -11,15 +11,15 @@ export function fetchRepo(select, repoInfoSection, contributorSection) {
         option.value = item.name;
         option.textContent = item.name;
         select.appendChild(option);
-
       })
 
-      showInfo(data, select, repoInfoSection, contributorSection);
+      repoInfo(data, select, repoInfoSection, contributorSection);
     })
     .catch(error => {
+      console.log(error);
       const errorEl = document.createElement('h3');
-      errorEl.setAttribute('style', 'background-color: orange; coral: red; display: block; padding = 10px');
-      errorEl.textContent = `network request failed ! "${error.message}"`;
+      errorEl.setAttribute('style', 'background-color: coral; color: white; display: block; text-align: center;');
+      errorEl.textContent = `Error ! ${error.message}`;
       document.body.appendChild(errorEl);
     });
 };

@@ -35,10 +35,15 @@ export function main() {
   contributorSection.className = 'contributors-container';
   main.appendChild(contributorSection);
 
+  const paginationSection = document.createElement('div');
+  paginationSection.className = 'pagination';
+  rootDiv.appendChild(paginationSection);
+
   const footer = document.createElement('footer');
   footer.textContent = '©2021 Created By Marzieh!';
   footer.style.textAlign = 'center';
-  rootDiv.appendChild(footer);
+  document.body.appendChild(footer);
+
 
   fetchRepo(select, repoInfoSection, contributorSection);
 
