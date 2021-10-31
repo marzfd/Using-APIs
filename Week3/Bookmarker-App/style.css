@@ -1,0 +1,130 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  background-color: #fdd2bf;
+  color: #290fba;
+  text-align: center;
+}
+
+#container {
+  background-color: #00000099;
+  text-align: left;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 1s;
+  transform: scale(0);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#close {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 50px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+#close:hover {
+  font-size: 90px;
+  transition: 1s;
+  transform: rotate(360deg);
+}
+
+.form {
+  background-color: #c79caf;
+  border-radius: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 100px auto;
+  width: 30vw;
+  padding: 30px;
+  box-shadow: 10px 10px 5px #877a94;
+}
+
+.button {
+  font-weight: bolder;
+}
+
+input {
+  padding: 10px;
+  width: 28vw;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 5px 5px 15px #877a94;
+}
+
+input::placeholder {
+  opacity: 0.7;
+}
+
+#list,
+#submit {
+  width: 15vw;
+  background-color: #8236cb;
+  color: #fdd2bf;
+  padding: 10px 1px;
+  font-size: 20px;
+  border: 3px solid #625a8f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#submit {
+  background-color: #ee2626;
+  width: 8vw;
+}
+
+#submit:focus,
+#list:focus {
+  background-color: #9e69c4;
+  color: #bfe4fd;
+}
+
+#yourSites div {
+  background-color: #af8c8c;
+  color: #181cf0;
+  margin: 10px auto;
+  width: 40vw;
+  padding: 8px;
+  border-radius: 15px;
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#yourSites a,
+#yourSites button {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  text-decoration: none;
+  background-color: #28e697;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-left: 5px;
+  color: #000;
+  font-weight: bolder;
+  cursor: pointer;
+  border: none;
+  height: 3vw;
+}
+
+#yourSites button {
+  background-color: #ee6767;
+}
+
+#marker {
+  margin: auto;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  display: none;
+}

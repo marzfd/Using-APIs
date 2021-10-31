@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>WebSite Marker</title>
+</head>
+<body>
+  <div id='marker'>✅</div>
+  <div class="form">
+
+    <h3>Please insert the URL and the name for the Web Page...</h3>
+
+    <form id="form">
+      <p><input type="text" id="WebsiteName" placeholder="Google" name="WebsiteName"></p>
+
+      <p><input type="text" id="url" placeholder="https://www.google.com" name="url"></p>
+
+      <p class="button">
+        <button type="submit" id="submit">Insert</button>
+        <button type="button" id="list">Your List</button>
+      </p>
+    </form>
+
+    <div id="container">
+      <p><a href="#" id="close">&times;</a></p>
+      <div id="yourSites"></div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2021 Created By Marzieh !</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
