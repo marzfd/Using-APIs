@@ -1,7 +1,7 @@
 import { contributorInfo } from "./contributorInfo.js";
 import { paginatedContributors } from "./paginatedContributors.js";
 
-export function fetchContributor(url, contributorSection, rootDiv) {
+export function fetchContributor(url, contributorSection) {
   fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -12,7 +12,7 @@ export function fetchContributor(url, contributorSection, rootDiv) {
           pagination.innerHTML = '';
         }
         else {
-          paginatedContributors(data, contributorSection, rootDiv);
+          paginatedContributors(data, contributorSection);
         }
 
     })
