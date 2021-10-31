@@ -1,4 +1,4 @@
-import { repoInfo } from './RepoInfo.js';
+import { repoInfo } from './repoInfo.js';
 
 const url = 'https://api.github.com/orgs/HackYourFuture/repos?per_page=100';
 
