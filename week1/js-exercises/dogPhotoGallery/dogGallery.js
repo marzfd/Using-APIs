@@ -13,7 +13,7 @@ function main() {
     // 1. Create a new XMLHttpRequest object
     const xhr = new XMLHttpRequest();
 
-    // 2. Configure it: GET-request for the URL 
+    // 2. Configure it: GET-request for the URL
     xhr.open('GET', url, true);
 
     // 3. Send the request over the network
@@ -51,11 +51,11 @@ function main() {
       console.log('Request failed');
     };
   }
-  
+
 
   // ! Axios
   function requestWithAxios() {
-    
+
     axios.get(url)
 
       .then(response => {
@@ -67,7 +67,7 @@ function main() {
         const imgEl = document.createElement('img');
         imgEl.src = `${response.data.message}`;
         liEl.appendChild(imgEl);
-        ulEl.appendChild(liEl);              
+        ulEl.appendChild(liEl);
       })
       // Handle Error
       .catch(error => console.log(error));
